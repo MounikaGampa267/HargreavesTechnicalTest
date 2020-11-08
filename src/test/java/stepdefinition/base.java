@@ -39,7 +39,6 @@ public class base {
 		home = new homePage(driver);
 		formsAuth = new forms(driver);
 		home.formAuthentication();
-		System.out.println("printing the driver value in formAuthentication class in and method" + driver);
 		formsAuth.enterUsername();
 		formsAuth.enterPassword();
 		formsAuth.clickLogin();
