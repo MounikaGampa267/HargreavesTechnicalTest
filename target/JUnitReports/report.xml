@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="36.424">
+<testcase classname="Testing the features of a website" name="Verifying the Form Authentication Feature" time="35.856">
+<system-out><![CDATA[Given Initializing browser for Form Authentication..........................passed
+When clicking on Form Authentication and Enter usename and password link....passed
+And Clicking on dynamic link and loading and verifying the hello wold.......passed
+And clicking on javascript..................................................passed
+Then verify the alert message dispalyed correct or not......................passed
+]]></system-out>
+</testcase>
+</testsuite>

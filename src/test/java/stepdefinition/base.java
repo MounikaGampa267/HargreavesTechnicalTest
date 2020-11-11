@@ -1,81 +1,97 @@
 package stepdefinition;
 
+import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import pages.dynamics;
-import pages.forms;
-import pages.homePage;
-import pages.jsConfirm;
+import pages.DynamicLoading;
+import pages.FormsAuthentication;
+import pages.HomePage;
+//import pages.initilization;
+import pages.JsAlerts;
 
-public class base {
+public class Base {
 
 	public static WebDriver driver;
-	forms formsAuth;
-	homePage home;
-	dynamics loading;
-	jsConfirm jsAlert;
+	FormsAuthentication formsAuth;
+	HomePage home;
+	DynamicLoading dynamicLoading;
+	JsAlerts jsAlert;
+	
 
 	@Before
 	@Given("^Initializing browser for Form Authentication$")
 	public void initializing_browser_for_Form_Authentication() throws Throwable {
+		String path="\\\\src\\\\test\\\\resources\\\\driver";
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter browser name:");
+		String browsername = sc.nextLine();
 		String projectPath = System.getProperty("user.dir");
-		System.setProperty("webdriver.chrome.driver", projectPath + "\\src\\test\\resources\\driver\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.get("https://the-internet.herokuapp.com/");
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		if (browsername.equalsIgnoreCase("chrome")) {
+			System.setProperty("webdriver.chrome.driver",
+					projectPath + "\\src\\test\\resources\\driver\\chromedriver.exe");
+			driver = new ChromeDriver();
+			driver.navigate().to("https://the-internet.herokuapp.com/");
 
+		} else if (browsername.equalsIgnoreCase("ie")) {
+			System.setProperty("webdriver.ie.driver",
+					projectPath + "\\src\\test\\resources\\driver\\IEDriverServer.exe");
+			driver = new InternetExplorerDriver();
+		} else if (browsername.equalsIgnoreCase("firefox")) {
+			System.setProperty("webdriver.gecko.driver",
+					projectPath + "\\src\\test\\resources\\driver\\Igeckodriver.exe");
+			driver = new FirefoxDriver();
+		}
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	}
 
 	@When("^clicking on Form Authentication and Enter usename and password link$")
 	public void clicking_on_Form_Authentication_and_Enter_usename_and_password_link() throws Throwable {
-		home = new homePage(driver);
-		formsAuth = new forms(driver);
+		
+		
+		home = new HomePage(driver);
+		formsAuth = new FormsAuthentication(driver);
 		home.formAuthentication();
 		formsAuth.enterUsername();
 		formsAuth.enterPassword();
 		formsAuth.clickLogin();
-		System.out.println("Succesfully logged in");
-
-		System.out.println("printing the driver value in formAuthentication class then class" + driver);
-		System.out.println("message visible");
 		formsAuth.messageVissible();
-		System.out.println("loggedout");
 		formsAuth.clickHome();
-		System.out.println("on home page");
-
-		System.out.println("printing the driver value in formAuthentication class after logout" + driver);
-
+		
 	}
 
 	@And("^Clicking on dynamic link and loading and verifying the hello wold$")
 	public void clicking_on_dynamic_link_and_loading_and_verifying_the_hello_wold() throws Throwable {
 
+		
 		home.navigatetoDynamicPage();
-		loading = new dynamics(driver);
-		System.out.println("click on dynamic page");
+		dynamicLoading = new DynamicLoading(driver);
+		Scanner sc=new Scanner(System.in);
+		String selectExample=sc.nextLine();
+		if(selectExample.equalsIgnoreCase("Example1"))
+		{
+			dynamicLoading.Example1();
+		}
+		else if(selectExample.equalsIgnoreCase("Example2"))
+		{
+		   dynamicLoading.Example2();
+		}
+		
 
-		loading.clicklink();
-		System.out.println("clicked dynamic page");
-
-		loading.startandLoading();
-		System.out.println("loading complete");
-
-		loading.checkMessage();
-		loading.clickHome();
 	}
-
 	@And("^clicking on javascript$")
 	public void clicking_on_javascript() throws Throwable {
 
-		jsAlert = new jsConfirm(driver);
+		jsAlert = new JsAlerts(driver);
 		home.clickJsConfirm();
 		jsAlert.clickJsButton();
 
@@ -87,5 +103,6 @@ public class base {
 		jsAlert.getAletmsg();
 		driver.close();
 	}
+	
 
 }

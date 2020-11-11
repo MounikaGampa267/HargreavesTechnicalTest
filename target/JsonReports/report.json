@@ -1,0 +1,84 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-11T20:19:46.881Z",
+        "line": 3,
+        "name": "Verifying the Form Authentication Feature",
+        "description": "",
+        "id": "testing-the-features-of-a-website;verifying-the-form-authentication-feature",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12090000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Initializing browser for Form Authentication",
+            "match": {
+              "location": "stepdefinition.Base.initializing_browser_for_Form_Authentication()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4474000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "clicking on Form Authentication and Enter usename and password link",
+            "match": {
+              "location": "stepdefinition.Base.clicking_on_Form_Authentication_and_Enter_usename_and_password_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 17973000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Clicking on dynamic link and loading and verifying the hello wold",
+            "match": {
+              "location": "stepdefinition.Base.clicking_on_dynamic_link_and_loading_and_verifying_the_hello_wold()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 813000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "clicking on javascript",
+            "match": {
+              "location": "stepdefinition.Base.clicking_on_javascript()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 331000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "verify the alert message dispalyed correct or not",
+            "match": {
+              "location": "stepdefinition.Base.verify_the_alert_message_dispalyed_correct_or_not()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Testing the features of a website",
+    "description": "",
+    "id": "testing-the-features-of-a-website",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Feature/formAuthentication.feature",
+    "tags": []
+  }
+]
