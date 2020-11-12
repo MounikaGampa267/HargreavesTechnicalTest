@@ -1,21 +1,21 @@
 # HargreavesTechnicalTest
 
-##Project Title:
+## Project Title:
  Cucumber Framework for testing The Internetherokuapp website
-##Introduction
+## Introduction
 This test is all about verifying the features of 3 different scenarios: 
 - Form Authentication
 - Dynamic Loading Feature 
 - JavaScript Alerts Feature 
 
-##Technology Used:
+## Technology Used:
 
 - An IDE
 - Selenium 
 - Java
 - JUnit 
 
-##Requirements
+## Requirements
 In order to utilise this project, you need to have the following installed locally:
 
 - Maven 
@@ -23,7 +23,7 @@ In order to utilise this project, you need to have the following installed local
 - Java
 
 
-##Framework used: Cucumber 
+## Framework used: Cucumber 
 
 Feature:
 This project will automate 3 features of the application 
@@ -31,7 +31,7 @@ Form Authentication
 Dynamic Loading
 JavaScript Alerts
 
-##Description
+## Description
 
 The code is written in Cucumber Framework in Maven Build project
 The code contains a feature files for 3 scenarios in src/test/resources
@@ -42,7 +42,7 @@ The feature file and stepdefinition files are executed from TestRunner class by 
 @RunWIth(cucumber.class)
 @CucumberOptions(feature:="src/rest/resources/Features", glue={"stepdefinitions"}
 
-##Reports
+## Reports
 
 The reports are saved in the Target folder and declared in TestRunner class.
 Json reports:
@@ -54,11 +54,11 @@ html:target/HtmlReports/HtmlReports
 Junit reports:
 junit:target/JUnitReports/report.xml
 
-##How to execute
+## How to execute
 Contextclick on the TestRunner.class and select 
 Run->Junit Test
 
-###From command Propmt
+### From command Propmt
 
 Open the command prompt and cd until the project root directory.
 
