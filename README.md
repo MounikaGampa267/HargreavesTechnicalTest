@@ -4,9 +4,9 @@
  Cucumber Framework for testing The Internetherokuapp website
 ##Introduction
 This test is all about verifying the features of 3 different scenarios: 
--Form Authentication
--Dynamic Loading Feature 
--JavaScript Alerts Feature 
+- Form Authentication
+- Dynamic Loading Feature 
+- JavaScript Alerts Feature 
 
 ##Technology Used:
 
@@ -18,9 +18,9 @@ This test is all about verifying the features of 3 different scenarios:
 ##Requirements
 In order to utilise this project, you need to have the following installed locally:
 
--Maven 
--Chrome and Chromedriver 
--Java
+- Maven 
+- Chrome and Chromedriver 
+- Java
 
 
 ##Framework used: Cucumber 
