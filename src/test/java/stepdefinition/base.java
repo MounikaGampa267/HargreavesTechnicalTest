@@ -86,8 +86,8 @@ public class Base {
 		   dynamicLoading.Example2();
 		}
 		
-
 	}
+	
 	@And("^clicking on javascript$")
 	public void clicking_on_javascript() throws Throwable {
 

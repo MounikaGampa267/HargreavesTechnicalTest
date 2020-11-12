@@ -3,7 +3,144 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-11-11T20:19:46.881Z",
+        "start_timestamp": "2020-11-12T01:26:36.208Z",
+        "line": 3,
+        "name": "verify click for Js Alert",
+        "description": "",
+        "id": "verifying-the-javascriptalerts;verify-click-for-js-alert",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "click JavaScript ALerts link",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "click on click for JS Alert button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "get the alert message and check relavent message",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T01:26:36.413Z",
+        "line": 9,
+        "name": "verifying click for JS confirm Alerts",
+        "description": "",
+        "id": "verifying-the-javascriptalerts;verifying-click-for-js-confirm-alerts",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "click on the  JavaScript ALerts link",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "click on click for JS confirm button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "get the message verify the message",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T01:26:36.436Z",
+        "line": 15,
+        "name": "verifying click for JS prompt",
+        "description": "",
+        "id": "verifying-the-javascriptalerts;verifying-click-for-js-prompt",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "click on  JavaScript ALerts",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "click on click for JS prompt button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "Enter the text into alert text box",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "Get the verify message from Result",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Verifying the JavaScriptAlerts",
+    "description": "",
+    "id": "verifying-the-javascriptalerts",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Feature/JavaScriptAlerts2.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-12T01:26:36.487Z",
         "line": 3,
         "name": "Verifying the Form Authentication Feature",
         "description": "",
@@ -13,7 +150,7 @@
         "steps": [
           {
             "result": {
-              "duration": 12090000000,
+              "duration": 35770000000,
               "status": "passed"
             },
             "line": 4,
@@ -25,7 +162,7 @@
           },
           {
             "result": {
-              "duration": 4474000000,
+              "duration": 2911000000,
               "status": "passed"
             },
             "line": 5,
@@ -37,7 +174,7 @@
           },
           {
             "result": {
-              "duration": 17973000000,
+              "duration": 14351000000,
               "status": "passed"
             },
             "line": 6,
@@ -49,7 +186,7 @@
           },
           {
             "result": {
-              "duration": 813000000,
+              "duration": 723000000,
               "status": "passed"
             },
             "line": 7,
@@ -61,7 +198,7 @@
           },
           {
             "result": {
-              "duration": 331000000,
+              "duration": 132000000,
               "status": "passed"
             },
             "line": 8,

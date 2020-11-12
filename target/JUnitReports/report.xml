@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="36.424">
-<testcase classname="Testing the features of a website" name="Verifying the Form Authentication Feature" time="35.856">
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="54.659">
+<testcase classname="Verifying the JavaScriptAlerts" name="verify click for Js Alert" time="0.157">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given click JavaScript ALerts link..........................................undefined
+When click on click for JS Alert button.....................................skipped
+Then get the alert message and check relavent message.......................skipped
+]]></failure>
+</testcase>
+<testcase classname="Verifying the JavaScriptAlerts" name="verifying click for JS confirm Alerts" time="0.006">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given click on the  JavaScript ALerts link..................................undefined
+When click on click for JS confirm button...................................skipped
+Then get the message verify the message.....................................skipped
+]]></failure>
+</testcase>
+<testcase classname="Verifying the JavaScriptAlerts" name="verifying click for JS prompt" time="0.008">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given click on  JavaScript ALerts...........................................undefined
+When click on click for JS prompt button....................................skipped
+And Enter the text into alert text box......................................skipped
+Then Get the verify message from Result.....................................skipped
+]]></failure>
+</testcase>
+<testcase classname="Testing the features of a website" name="Verifying the Form Authentication Feature" time="53.896">
 <system-out><![CDATA[Given Initializing browser for Form Authentication..........................passed
 When clicking on Form Authentication and Enter usename and password link....passed
 And Clicking on dynamic link and loading and verifying the hello wold.......passed
